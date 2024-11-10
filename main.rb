@@ -25,20 +25,37 @@
 
 # puts idea_backwards
 
-require_relative 'wordlist'
+# require_relative 'wordlist'
 
-print"Enter your idea: "
-idea = gets
-CODE_WORDS.each do |real, code|
-  idea.gsub!(real, code)
-end
+# print"Enter your idea: "
+# idea = gets
+# CODE_WORDS.each do |real, code|
+#   idea.gsub!(real, code)
+# end
 
-# saving to new file
-print "file encoded, please enter a namefor this idea: "
-idea_name = gets.strip
-File::open("idea-" + idea_name + "txt", "w") do |f|
-  f << idea
-end 
+# # saving to new file
+# print "file encoded, please enter a namefor this idea: "
+# idea_name = gets.strip
+# File::open("idea-" + idea_name + "txt", "w") do |f|
+#   f << idea
+# end 
 
-p Dir['idea*.txt']
-p File::methods
+# p Dir['idea-*.txt']
+
+
+# kitty_toys = 
+#   [:shape => 'sock', fabric: 'cashmere'] +
+#   [:shape => 'mouse', fabric: 'cotton'] +
+#   [:shape => 'feather', fabric: 'calico']
+#   [:shape => 'eggroll', fabric: 'pleather']
+
+# kitty_toys.sort_by { |toy| toy[:shape] }.each do |toy|
+#   puts "blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+# end
+
+# non_eggroll = 0
+# kitty_toys.each do |toy|
+#   next if toy[:shape] == 'eggroll'
+#   non_eggroll = non_eggroll + 1
+# end
+# print non_eggroll
