@@ -41,3 +41,4 @@ File::open("idea-" + idea_name + "txt", "w") do |f|
 end 
 
 p Dir['idea*.txt']
+p File::methods
