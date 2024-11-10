@@ -1,0 +1,7 @@
+echo ".bundle/" >> .gitignore
+echo "log/" >> .gitignore
+echo "tmp/" >> .gitignore
+echo "*.gem" >> .gitignore
+echo ".byebug_history" >> .gitignore
+
+
